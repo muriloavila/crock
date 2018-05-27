@@ -1,0 +1,3 @@
+function executaBotao(){
+    alert("Oi");
+}
