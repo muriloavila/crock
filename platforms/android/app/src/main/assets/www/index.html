@@ -9,15 +9,15 @@
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <title>Hello World</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/crock.js"></script>
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
     <script type="text/javascript">
         app.initialize();
     </script>
@@ -25,7 +25,7 @@
 
 <body>
     <div id="example">
-        <button type="button" class="btn btn-primary btn-lg" onclick="executaBotao()">Primary</button>
+        <button type="button" id="ponto" tipo="" class="btn btn-primary btn-lg" onclick="salvaPonto()"></button>
     </div>
 </body>
 
