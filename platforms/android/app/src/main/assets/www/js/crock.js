@@ -1,5 +1,4 @@
 function getLastPoint(){
-    var now = new Date();
     var date = new Date(Date.now()).toISOString().split('T')[0];
 
     var proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -25,7 +24,7 @@ function getLastPoint(){
 
 
 function setNextPoint(tipo) {
-    if(tipo == null){
+    if(tipo === null){
         tipo = "SAIDA";
     }
     var next = "";
